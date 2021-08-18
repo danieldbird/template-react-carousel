@@ -1,0 +1,32 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.carousel {
+  position: relative;
+  padding: 2rem 0;
+  overflow: hidden;
+  text-align: center;
+}
+.slide {
+  position: absolute;
+  width: 100vw;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+.nextSlide {
+  transform: translateX(100%);
+}
+.lastSlide {
+  transform: translateX(-100%);
+}
